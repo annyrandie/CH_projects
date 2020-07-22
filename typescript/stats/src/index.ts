@@ -2,10 +2,10 @@
 //to use it install type definition file
 //npm install @types/node
 // import fs from 'fs';
-import { CsvFileReader } from './CsvFileReader';
+import { MatchReader } from './MatchReader';
 import { MatchResult } from './MatchResult';
 
-const reader = new CsvFileReader('football.csv');
+const reader = new MatchReader('football.csv');
 
 reader.read();
 const dateOfFirstMatch = reader.data[0];
